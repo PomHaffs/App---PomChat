@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CameraVC.swift
 //  PomChat
 //
 //  Created by Tomas-William Haffenden on 5/12/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CameraVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
