@@ -20,11 +20,27 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z6d-vE-7d5" userLabel="PreviewView" customClass="AAPLPreviewView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Z6d-vE-7d5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6xg-NS-4Hp"/>
+                            <constraint firstItem="Z6d-vE-7d5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MPP-6f-zc7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z6d-vE-7d5" secondAttribute="bottom" id="QV2-fo-43J"/>
+                            <constraint firstAttribute="trailing" secondItem="Z6d-vE-7d5" secondAttribute="trailing" id="QZ7-dL-1nq"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="previewView" destination="Z6d-vE-7d5" id="SdJ-xC-wvb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>
     </scenes>
 </document>

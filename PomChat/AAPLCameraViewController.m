@@ -371,7 +371,7 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 	BOOL showResumeButton = NO;
 
 	// In iOS 9 and later, the userInfo dictionary contains information on why the session was interrupted.
-	if ( /* DISABLES CODE */ (&AVCaptureSessionInterruptionReasonKey) ) {
+	if ( /* DISABLES CODE */ (/* DISABLES CODE */ (&AVCaptureSessionInterruptionReasonKey)) ) {
 		AVCaptureSessionInterruptionReason reason = [notification.userInfo[AVCaptureSessionInterruptionReasonKey] integerValue];
 		NSLog( @"Capture session was interrupted with reason %ld", (long)reason );
 
